@@ -11,7 +11,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2 
-      - name: Deploy in EC2
+      - name: Deploy in Azure
         env:
             PRIVATE_KEY: ${{ secrets.AZURE_PRIVATE_KEY  }}
             HOSTNAME : ${{ secrets.HOSTNAME  }}
